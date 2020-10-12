@@ -6,18 +6,32 @@ const mainpic = document.getElementById('mainpic');
 const blue = window.matchMedia("(max-width: 800px)");
 
 
-//play sound
-
-function croaker(){
-    
-    mainpic.innerHTML = '<img src="img/froggy.png" alt="decorative">' 
+//switch introduction pic
+function switchpic(){
+    switch (mainpic.innerHTML) {
+        case '<img src="img/fashion/fashion1.png" alt="decorative">' :
+            mainpic.innerHTML = '<img src="img/fashion/fashion2.png" alt="decorative">';
+            break;
+        case '<img src="img/fashion/fashion2.png" alt="decorative">' :
+            mainpic.innerHTML = '<img src="img/fashion/fashion3.png" alt="decorative">';
+         break;
+        case '<img src="img/fashion/fashion3.png" alt="decorative">' :
+            mainpic.innerHTML = '<img src="img/fashion/fashion4.png" alt="decorative">';
+         break;
+        case '<img src="img/fashion/fashion4.png" alt="decorative">' :
+            mainpic.innerHTML = '<img src="img/fashion/fashion5.png" alt="decorative">';
+         break;
+    default: 
+    mainpic.innerHTML = '<img src="img/fashion/fashion1.png" alt="decorative">' 
 }
+}
+    setInterval(switchpic, 2000);
 
-function changefrog(){
-    const frogster = new Audio('sounds/frog.ogg')
-    frogster.play();
-    mainpic.innerHTML = '<img src="img/froggy2.png" alt="decorative">' 
-    setTimeout(croaker, 1000);
+//Play applause 
+
+function clapping(){
+    const claps = new Audio("sounds/applause.wav");
+    claps.play();
 }
 
 // Show and hide about info
@@ -59,35 +73,29 @@ function flipMe(){
 const count = document.getElementById('count');
 
 var imageList = [
-    "bear.jpg",
-    "bird.jpg",
-    "butterfly.jpg",
-    "cat.jpg",
-    "chicken.jpg",
-    "cow.jpg",
-    "dog.jpg",
-    "dolphin.jpg",
-    "elephant.jpg",
-    "fish.jpg",
-    "frog.jpg",
-    "giraffe.jpg",
-    "goat.jpg",
-    "hare.jpg",
-    "hippo.jpg",
-    "horse.jpg",
-    "lion.jpg",
-    "monkey.jpg",
-    "mouse.jpg",
-    "parrot.jpg",
-    "penguin.jpg",
-    "pig.jpg",
-    "rabbit.jpg",
-    "seal.jpg",
-    "sheep.jpg",
-    "snake.jpg",
-    "squirrel.jpg",
-    "tiger.jpg",
-    "turtle.jpg"
+    "belt.jpg",
+    "boots.jpg",
+    "cap.jpg",
+    "dress.jpg",
+    "flip-flops.jpg",
+    "gloves.jpg",
+    "hat.jpg",
+    "hoodie.jpg",
+    "jacket.jpg",
+    "jeans.jpg",
+    "jumper.jpg",
+    "pyjamas.jpg",
+    "raincoat.jpg",
+    "sandals.jpg",
+    "scarf.jpg",
+    "shirt.jpg",
+    "shoes.jpg",
+    "skirt.jpg",
+    "socks.jpg",
+    "trainers.jpg",
+    "trousers.jpg",
+    "tshirt.jpg",
+    "umbrella.jpg"
 ];
 
 

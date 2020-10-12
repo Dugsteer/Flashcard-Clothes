@@ -36,9 +36,9 @@
     
     &__img {
         // width: 17vw;
-        width: 230px;
+        width: 170px;
         // height: 17vw;
-        height: 230px;
+        height: 260px;
         background-color: $color-green;
         padding: 20px;
         align-self: center;
@@ -50,8 +50,7 @@
 
         @media only screen and (max-width:$bp-large){
            width: 150px;
-           height: 150px;
-           margin-right: 2rem;
+           height: 225px;
         
            }
 
