@@ -29,7 +29,7 @@ function switchpic() {
         '<img src="img/fashion/fashion1.png" alt="decorative">';
   }
 }
-setInterval(switchpic, 2000);
+setInterval(switchpic, 4000);
 
 //Play applause
 
